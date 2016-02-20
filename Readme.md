@@ -6,6 +6,7 @@ Eine Desktop-App für Telefon zu Telefon Anrufe über Sipgate.
 1. npm install
 2. npm start
 3. Einstellungen vornehmen
+
 - Username - aus dem Weblogin
 - Password - aus dem Weblogin
 - registerSip - SIP-ID http://teamhelp.sipgate.de/hc/de/articles/203643481-Allgemeine-Konfigurationsdaten

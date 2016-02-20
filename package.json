@@ -1,14 +1,15 @@
 {
   "name": "sipgate-callme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sipgate call forwarding HTML-DesktopApp",
   "main": "main.js",
   "dependencies": {
+    "electron-settings": "^1.0.1",
+    "electron-default-menu": "^0.1.1",
     "electron-settings": "^1.0.1"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.36.8",
-    "electron-settings": "^1.0.1"
+    "electron-prebuilt": "^0.36.8"
   },
   "scripts": {
     "start": "electron main.js"

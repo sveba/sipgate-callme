@@ -1,8 +1,11 @@
+var defaultMenu = require('electron-default-menu');
+var Menu = require('menu');
 var app = require('app');
 var BrowserWindow = require('browser-window');
 var ElectronSettings = require('electron-settings');
 var settings = new ElectronSettings();
 const ipcMain = require('electron').ipcMain;
+
 
 ipcMain.on('settings-save', function(event, arg) {
   for(var prop in arg) {
@@ -31,6 +34,9 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', function() {
+  var menu = defaultMenu();
+  Menu.setApplicationMenu(Menu.buildFromTemplate(menu));
+
   mainWindow = new BrowserWindow({width: 200, height: 200});
 
   mainWindow.loadURL('file://' + __dirname + '/index.html');
