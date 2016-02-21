@@ -9,7 +9,7 @@ Eine Desktop-App für Telefon zu Telefon Anrufe über Sipgate.
 
 - Username - aus dem Weblogin
 - Password - aus dem Weblogin
-- registerSip - SIP-ID http://teamhelp.sipgate.de/hc/de/articles/203643481-Allgemeine-Konfigurationsdaten
+- SIP-ID - SIP-ID vom jeweligen Endgerät  http://teamhelp.sipgate.de/hc/de/articles/203643481-Allgemeine-Konfigurationsdaten
 - Telnr- deine Handynummer
 
 ## HowTo package
