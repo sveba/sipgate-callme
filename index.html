@@ -7,28 +7,61 @@
 
     <title>Sipgate Callme</title>
 
+    <link rel="stylesheet" href="./css/materialize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
+
 <body>
-
-<button id="props">Einstellungen</button>
-<div id="settings">
-    <input type="text" id="registerSip" placeholder="Sip-register">
-    <input type="tel" id="caller" placeholder="Deine Telefonnummer">
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Passwort">
-    <button id="save">Save</button>
+<div class="container">
+    <div class="row">
+        <div id="settings" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="registerSip" type="text">
+                    <label for="registerSip" class="active">Sip-Register</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="caller" type="tel">
+                    <label for="caller" class="active">Deine Telefonnummer</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="username" type="text">
+                    <label for="username" class="active">Username</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" type="password">
+                    <label for="password" class="active">Passwort</label>
+                </div>
+                <div class="col s12">
+                    <button id="save" class="btn waves-effect waves-light">Speichern</button>
+                    <button class="btn waves-effect waves-light props">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+        <div id="calling" class="col s12">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section">
+                        <p id="callerNr"></p>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <div class="input-field col s12">
+                    <input id="callee" type="tel">
+                    <label for="callee" class="active">Zielnummer</label>
+                </div>
+                <div class="col s12">
+                    <button id="call" class="btn waves-effect waves-light">Callme</button>
+                    <button class="btn waves-effect waves-light props">Einstellungen</button>
+                </div>
+                <div id="status" class="col s12"></div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<div id="calling">
-    <div id="callerNr"></div>
-    <input type="tel" id="callee" placeholder="Zielnummer">
-    <button id="call">Callme</button>
-    <div id="status"></div>
-</div>
-
 <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
 <script src="./js/script.js"></script>
 </body>
+
 </html>

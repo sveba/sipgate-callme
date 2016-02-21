@@ -6,7 +6,7 @@ $(function(){
 
     $('#call').on('click', call);
     $('#save').on('click', save);
-    $('#props').on('click', switchDialogs);
+    $('.props').on('click', switchDialogs);
 
     ipcRenderer.on('settings-loaded', function(event, data) {
         hash = data.hash;

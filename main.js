@@ -37,7 +37,7 @@ app.on('ready', function() {
   var menu = defaultMenu();
   Menu.setApplicationMenu(Menu.buildFromTemplate(menu));
 
-  mainWindow = new BrowserWindow({width: 200, height: 200});
+  mainWindow = new BrowserWindow({width: 400, height: 400});
 
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
