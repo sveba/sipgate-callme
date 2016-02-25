@@ -39,7 +39,7 @@ $(function(){
         var password = $('#password').val();
         username = $('#username').val();
         registerSip = $('#registerSip').val();
-        caller = $('#caller').val();
+        caller = normalizeTelNr($('#caller').val());
         hash = btoa(username + ':' + password);
 
         var settings = {
@@ -57,7 +57,7 @@ $(function(){
 
     function call() {
         var data = {
-            'callee': 'tel:' + '49' + $('#callee').val().substr(1),
+            'callee': 'tel:' + '49' + normalizeTelNr($('#callee').val()).substr(1),
             'caller': 'tel:' + '49' + caller.substr(1),
             'registerSip': registerSip,
             'version': '2.37.0'
@@ -71,6 +71,11 @@ $(function(){
                 $('#status').text('Calling');
             }
         });
+    }
+
+    function normalizeTelNr(telnr) {
+        var cutFrom = telnr.charAt(0) === "0" ? 0 : 1;
+        return telnr.substr(cutFrom).replace(/\D/g,'');
     }
 
     load();
