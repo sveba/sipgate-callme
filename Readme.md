@@ -23,4 +23,4 @@ Linux
 ```
 electron-packager . sipgate-callme --platform=linux --arch=x64 --version=0.36.8
 ```
-
+![alt text](https://codeship.com/projects/139827/status?branch=master "Build Status")
