@@ -23,4 +23,4 @@ Linux
 ```
 electron-packager . sipgate-callme --platform=linux --arch=x64 --version=0.36.8
 ```
-![alt text](https://codeship.com/projects/139827/status?branch=master "Build Status")
+[ ![Codeship Status for sveba/sipgate-callme](https://codeship.com/projects/94630e10-c9e4-0133-f004-0aabfff4550a/status?branch=master)](https://codeship.com/projects/139827)
